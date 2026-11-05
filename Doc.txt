@@ -1,0 +1,8 @@
+RAG (Retrieval-Augmented Generation) was introduced by Lewis et al. in 2020 to address LLM hallucination and knowledge cutoff.
+Vector databases store embeddings for fast Approximate Nearest Neighbor search. HNSW provides O(log N) search with high recall.
+Chunking strategy directly impacts retrieval quality. Small chunks (256 tokens) improve precision for QA, while large chunks (1024) preserve context for summarization.
+Metadata filtering allows multi-tenant isolation and ACL. Payload in Qdrant or metadata in Pinecone stores source, page, date.
+Hybrid search combines dense (semantic) and sparse (BM25) to improve Recall@10 by 15-25% over dense-only.
+Reranking with cross-encoders re-scores top-20 to top-5, adding 80-150ms but improving precision significantly.
+Query rewriting via Multi-Query and HyDE bridges the query-document gap.
+Evaluation via RAGAS measures Context Precision, Recall, Faithfulness, Answer Relevance.
