@@ -6,7 +6,6 @@ This project is a Jupyter notebook exploring practical LangChain and retrieval-a
 
 - `project.ipynb` — notebook with five exercises.
 - `Doc.txt` — source text loaded by the RAG and retrieval exercises.
-- `.env.example` — template for the required OpenAI configuration.
 
 ## Notebook exercises
 
